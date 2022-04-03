@@ -251,3 +251,40 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+
+const future = new Date('2037 1 12 ');
+console.log(future);
+
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDay());
+
+// intrenatiolaizing dates
+
+const dates = Intl.DateTimeFormat('en-US').format(Date.now());
+console.log(dates);
+
+// setTimeout runs a callback function after certain amount of time but callback
+// is executed only once
+
+const timeout = setTimeout(
+  (firstName, lastName) => {
+    console.log(`My name is ${firstName} ${lastName}`);
+  },
+  1000,
+  'anish',
+  'kaushal'
+);
+// clearTimeout to clear timeout
+
+//setInterval basically executes the calback function after certain amount of time continously
+
+// const interval = setInterval(
+//   (firstName, lastName) => {
+//     console.log(`My name is ${firstName} ${lastName}`);
+//   },
+//   1000,
+//   'anish',
+//   'kaushal'
+// );
+// clearInterval to clear interval
